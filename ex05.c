@@ -21,14 +21,18 @@ int main()
     int i = 0;
     int j = 0;
     char sexo;
-    char corOlhos, corCabelos;
+    char corOlhos[20], corCabelos[20];
 
-    //int vetor [];
-
-    while (idade >= 0)
+    while (idade != -1)
     {
         printf("Digite sua idade: \n");
         scanf("%d", &idade);
+
+        if (idade == -1)
+        {
+            break;
+        }
+        
 
         if (maiorIdade < idade)
         {
@@ -38,18 +42,23 @@ int main()
         printf("Digite o sexo 'M'(Masculino) ou 'F'(Feminino): \n");
         scanf(" %c", &sexo);
 
-        if(sexo == 'F' || sexo == 'f')
+        if(sexo == 'F' || sexo == 'f' && (idade > 17 && idade < 35) )
         {
             printf("Digite a cor do seu cabelo: \n");
-            scanf(" %c", &corCabelos);
+            scanf(" %s", &corCabelos);
             printf("Digite a cor dos seus olhos: \n");
-            scanf(" %c", &corOlhos);
-            if ((idade > 17 && idade < 35) && (corCabelos == 'louro' || corCabelos == 'loiro') && (corOlhos == 'verde'))
+            scanf(" %s", &corOlhos);
+
+            //Como funciona a string compare(ou strcmp), ela compara as strings e retorna um valor.
+            /*A função strcmp retorna 0 quando as strings são iguais. Para verificar se a cor do cabelo é "louro" ou "loiro", 
+            você precisa verificar se strcmp retorna 0 para ambas as comparações.*/
+            if ((strcmp(corCabelos, "louro") == 0 || strcmp(corCabelos, "loiro")) == 0 && (strcmp(corOlhos, "verde")) == 0)
             {
                 qntdMulheres++;
             }   
         }
     }
      printf("A maior idade é: %d\n", maiorIdade);
+     printf("A quantidade de Mulheres dentre as especificacoes e: %d", qntdMulheres);
 
 }
