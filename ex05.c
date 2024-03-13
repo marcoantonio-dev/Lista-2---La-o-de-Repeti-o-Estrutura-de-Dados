@@ -15,27 +15,41 @@ O final do conjunto de habitantes é reconhecido pelo valor -1 entrada como idad
 int main()
 {
 
-    int idade, maior_idade, qntdMulheres, i, j = 0;
+    int idade = 0;
+    int maiorIdade = 0;
+    int qntdMulheres = 0;
+    int i = 0;
+    int j = 0;
     char sexo;
     char corOlhos, corCabelos;
 
-    while (i >= 0)
+    //int vetor [];
+
+    while (idade >= 0)
     {
         printf("Digite sua idade: ");
         scanf("%d", &idade);
 
-        if (maior_idade < idade)
+        if (maiorIdade < idade)
         {
-            maior_idade = idade;
-        }else{
-            maior_idade = maior_idade;
+            maiorIdade = idade;
         }
 
-        
-        
+        printf("Digite o sexo 'M'(Masculino) ou 'F'(Feminino): ");
+        scanf(" %c", &sexo);
 
+        printf("");
+        printf("");
 
+        if(sexo == 'F' || sexo == 'f')
+        {
+            if ()
+            {
+                
+            }
+            
+        }
     }
-    
+     printf("A maior idade é: %d\n", maiorIdade);
 
 }
