@@ -1,0 +1,41 @@
+1. (WHILE) Escreva um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe. O algoritmo deverá ler, além das notas, o código do aluno e deverá ser encerrado quando o código for igual a zero.
+
+2. (WHILE) Escreva um algoritmo que calcule a média dos números digitados pelo usuário, se eles forem pares. Termine a leitura se o usuário digitar zero (0).
+
+3. (DO WHILE) Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos: [0,25], [26,50], [51,75] e [76,100]. A entrada de dados deve terminar quando for lido um número negativo.
+
+4. (FOR) Foi feita uma pesquisa entre os habitantes de uma região. Foram coletados os dados de idade, sexo (M/F) e salário. Faça um algoritmo que informe de 15 pessoas:  
+
+a) a média de salário do grupo;
+
+b) maior e menor idade do grupo;
+
+c) quantidade de mulheres com salário até R$100,00.
+
+5. (WHILE) Faça um algoritmo que determine e escreva:   
+
+- a maior idade dos habitantes
+
+- a quantidade de indivíduos do sexo feminino cuja idade está entre 18 e 35 anos inclusive e que tenham olhos verdes e cabelos louros.
+
+O final do conjunto de habitantes é reconhecido pelo valor -1 entrada como idade.
+
+6. (FOR) Escreva um algoritmo que gere o números de 1000 a 1999 e escreva aqueles que dividido por 11 dão resto igual a 5.
+
+7. (WHILE) A prefeitura de uma cidade fez uma pesquisa entre seus habitantes, coletando dados sobre o salário e número de filhos. A prefeitura deseja saber:  
+
+a) média do salário da população;
+
+b) média do número de filhos;
+
+c) maior salário;
+
+d) percentual de pessoas com salário até R$100,00.
+
+O final da leitura de dados se dará com a entrada de um salário negativo.  
+
+8. Escrever um algoritmo que calcule e mostre a média aritmética dos números lidos entre 13 e 73.
+
+9. Escrever um algoritmo que gera e escreve os números ímpares entre 100 e 200.
+
+10. Escrever um algoritmo que lê 10 valores, um de cada vez, e conta quantos deles estão no intervalo [10,20] e quantos deles estão fora do intervalo, escrevendo estas informações.
