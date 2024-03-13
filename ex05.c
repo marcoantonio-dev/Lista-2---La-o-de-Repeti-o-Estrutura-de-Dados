@@ -27,7 +27,7 @@ int main()
 
     while (idade >= 0)
     {
-        printf("Digite sua idade: ");
+        printf("Digite sua idade: \n");
         scanf("%d", &idade);
 
         if (maiorIdade < idade)
@@ -35,19 +35,19 @@ int main()
             maiorIdade = idade;
         }
 
-        printf("Digite o sexo 'M'(Masculino) ou 'F'(Feminino): ");
+        printf("Digite o sexo 'M'(Masculino) ou 'F'(Feminino): \n");
         scanf(" %c", &sexo);
-
-        printf("");
-        printf("");
 
         if(sexo == 'F' || sexo == 'f')
         {
-            if ()
+            printf("Digite a cor do seu cabelo: \n");
+            scanf(" %c", &corCabelos);
+            printf("Digite a cor dos seus olhos: \n");
+            scanf(" %c", &corOlhos);
+            if ((idade > 17 && idade < 35) && (corCabelos == 'louro' || corCabelos == 'loiro') && (corOlhos == 'verde'))
             {
-                
-            }
-            
+                qntdMulheres++;
+            }   
         }
     }
      printf("A maior idade é: %d\n", maiorIdade);
